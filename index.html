@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_071ca71c5125a656ec8e1d8469e93bc8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_071ca71c5125a656ec8e1d8469e93bc8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_071ca71c5125a656ec8e1d8469e93bc8 = L.map(
+                "map_071ca71c5125a656ec8e1d8469e93bc8",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f74ac1e18e793fc0b6533e925a33e00f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f74ac1e18e793fc0b6533e925a33e00f.addTo(map_071ca71c5125a656ec8e1d8469e93bc8);
+        
+    
+            var marker_1aa20faa97a7db8426f9304cc882738b = L.marker(
+                [40.4168, -3.7038],
+                {}
+            ).addTo(map_071ca71c5125a656ec8e1d8469e93bc8);
+        
+    
+            var icon_c870ab35a6adb59d2f2db043d3517b9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1aa20faa97a7db8426f9304cc882738b.setIcon(icon_c870ab35a6adb59d2f2db043d3517b9a);
+        
+    
+        var popup_0ae5a66aa2a1653dd93b4cb10eb0cd13 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_183b5f6b17eef7046701f6397fe23bb7 = $(`<div id="html_183b5f6b17eef7046701f6397fe23bb7" style="width: 100.0%; height: 100.0%;"><b>País:</b> España<br><b>Programas:</b><ul><li>Maestría Oficial en Ciberseguridad</li><li>Maestría Universitaria en Seguridad Informática</li><li>Maestría en Ciberseguridad</li><li>Maestría en Seguridad y Defensa</li><li>Maestría Oficial en Seguridad, Defensa y Geoestrategia</li></ul></div>`)[0];
+                popup_0ae5a66aa2a1653dd93b4cb10eb0cd13.setContent(html_183b5f6b17eef7046701f6397fe23bb7);
+            
+        
+
+        marker_1aa20faa97a7db8426f9304cc882738b.bindPopup(popup_0ae5a66aa2a1653dd93b4cb10eb0cd13)
+        ;
+
+        
+    
+    
+            var marker_5053de43a907e5d9402f79b7fa86ac36 = L.marker(
+                [-34.6037, -58.3816],
+                {}
+            ).addTo(map_071ca71c5125a656ec8e1d8469e93bc8);
+        
+    
+            var icon_6cb475a1b1f36aa4e74bddf8a4a38a4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5053de43a907e5d9402f79b7fa86ac36.setIcon(icon_6cb475a1b1f36aa4e74bddf8a4a38a4f);
+        
+    
+        var popup_5a3b1da043acab6b9ca0063f70d18b2d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cd4b7fe75b9fc313b1a08b723b40a4ac = $(`<div id="html_cd4b7fe75b9fc313b1a08b723b40a4ac" style="width: 100.0%; height: 100.0%;"><b>País:</b> Argentina<br><b>Programas:</b><ul><li>Especialización en Criptografía Seguridad y Teleinformática</li><li>Maestría en Ciberdefensa y Ciberseguridad</li><li>Especialización en Seguridad Informática</li></ul></div>`)[0];
+                popup_5a3b1da043acab6b9ca0063f70d18b2d.setContent(html_cd4b7fe75b9fc313b1a08b723b40a4ac);
+            
+        
+
+        marker_5053de43a907e5d9402f79b7fa86ac36.bindPopup(popup_5a3b1da043acab6b9ca0063f70d18b2d)
+        ;
+
+        
+    
+    
+            var marker_03ca46a17ef3e3129267fc9ca93363a3 = L.marker(
+                [37.0902, -95.7129],
+                {}
+            ).addTo(map_071ca71c5125a656ec8e1d8469e93bc8);
+        
+    
+            var icon_9613af4cd822fdb13456e6de5db7e659 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03ca46a17ef3e3129267fc9ca93363a3.setIcon(icon_9613af4cd822fdb13456e6de5db7e659);
+        
+    
+        var popup_b4231ca358664079b82a0b8c0a5ef3c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2efe3316eff410a71753b49a2cb8c278 = $(`<div id="html_2efe3316eff410a71753b49a2cb8c278" style="width: 100.0%; height: 100.0%;"><b>País:</b> Estados Unidos<br><b>Programas:</b><ul><li>Maestría en Ciberseguridad</li><li>Master of Science in Computing Security</li></ul></div>`)[0];
+                popup_b4231ca358664079b82a0b8c0a5ef3c5.setContent(html_2efe3316eff410a71753b49a2cb8c278);
+            
+        
+
+        marker_03ca46a17ef3e3129267fc9ca93363a3.bindPopup(popup_b4231ca358664079b82a0b8c0a5ef3c5)
+        ;
+
+        
+    
+    
+            var marker_ea8f47d8c1725af7cd97b2cd3a72852f = L.marker(
+                [9.7489, -83.7534],
+                {}
+            ).addTo(map_071ca71c5125a656ec8e1d8469e93bc8);
+        
+    
+            var icon_5e6e3a29bac4c33f74f7e559d97d169d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea8f47d8c1725af7cd97b2cd3a72852f.setIcon(icon_5e6e3a29bac4c33f74f7e559d97d169d);
+        
+    
+        var popup_8a1f92f5db289a11baddf56efbc3fb58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa071abe34633f6118e3c878dc3f2e56 = $(`<div id="html_fa071abe34633f6118e3c878dc3f2e56" style="width: 100.0%; height: 100.0%;"><b>País:</b> Costa Rica<br><b>Programas:</b><ul><li>Posgrado en Seguridad de la Información</li><li>Especialización en Cybersecurity</li><li>Especialidad en Ciberseguridad</li></ul></div>`)[0];
+                popup_8a1f92f5db289a11baddf56efbc3fb58.setContent(html_fa071abe34633f6118e3c878dc3f2e56);
+            
+        
+
+        marker_ea8f47d8c1725af7cd97b2cd3a72852f.bindPopup(popup_8a1f92f5db289a11baddf56efbc3fb58)
+        ;
+
+        
+    
+    
+            var marker_0a9b1d99921392fcc7a7b6d39635ddce = L.marker(
+                [52.3676, 4.9041],
+                {}
+            ).addTo(map_071ca71c5125a656ec8e1d8469e93bc8);
+        
+    
+            var icon_05972f9e644b6531327bbc0ee99c7131 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a9b1d99921392fcc7a7b6d39635ddce.setIcon(icon_05972f9e644b6531327bbc0ee99c7131);
+        
+    
+        var popup_4a938d5bb6613ef6ffbab7643d6d81b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73b320371dab59aee05737bffb7821f6 = $(`<div id="html_73b320371dab59aee05737bffb7821f6" style="width: 100.0%; height: 100.0%;"><b>País:</b> Países Bajos<br><b>Programas:</b><ul><li>Vrije Universiteit Ámsterdam</li></ul></div>`)[0];
+                popup_4a938d5bb6613ef6ffbab7643d6d81b7.setContent(html_73b320371dab59aee05737bffb7821f6);
+            
+        
+
+        marker_0a9b1d99921392fcc7a7b6d39635ddce.bindPopup(popup_4a938d5bb6613ef6ffbab7643d6d81b7)
+        ;
+
+        
+    
+</script>
+</html>
